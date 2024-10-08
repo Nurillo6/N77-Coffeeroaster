@@ -1,0 +1,29 @@
+.site-header {
+    padding: 40px 0;
+    background-image: url("../../images/bg-orange.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo-link {
+    display: inline-block;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar__link {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.06px;
+    letter-spacing: 1px;
+    color: #333333;
+    text-transform: uppercase;
+}
