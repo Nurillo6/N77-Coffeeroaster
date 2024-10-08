@@ -1,0 +1,31 @@
+
+@mixin display($space){
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+
+@mixin textStyle($MB,$FS, $FW, $LH,$Color){
+    margin-bottom: $MB;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+    color: $Color;
+}
+
+@mixin ButtonStyle($W,$BG, $Color, $PY ){
+    width: $W;
+    padding: $PY 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.75px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: $BG;
+    border: 2px solid transparent;
+    color: $Color;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}

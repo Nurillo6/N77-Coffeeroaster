@@ -1,0 +1,36 @@
+.hero-section {
+    padding: 116px 0 249px;
+    background-image:url("../images/bg-orange.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+
+.hero__img{
+    position: absolute;
+    right: 0;
+    top: -78px;
+}
+.hero__content-wrapper {
+    width: 464px;
+}
+
+.hero__title {
+    @include textStyle($MB:24px,$FS:64px, $FW:700, $LH:75px,$Color:#000);
+}
+
+.hero__text {
+    @include textStyle($MB:34px,$FS:16px, $FW:400, $LH:24px,$Color:#000);
+    // & == .hero__text
+}
+
+.hero__btn {
+    @include ButtonStyle($W:193px,$BG:#0A775F, $Color:white, $PY:16px);
+    // & == .hero__btn
+    &:hover{
+        background-color: transparent;
+        color: #0A775F;
+        border-color: #0A775F;
+    }
+}

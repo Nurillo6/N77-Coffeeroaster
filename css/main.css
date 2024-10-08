@@ -40,7 +40,7 @@ body {
 
 .site-header {
   padding: 40px 0;
-  background-image: url("../../images/bg-orange.png");
+  background-image: url("../images/bg-orange.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,14 +59,71 @@ body {
 .header__list {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 40px;
 }
 
 .navbar__link {
+  margin-bottom: 0px;
   font-size: 12px;
   font-weight: 700;
   line-height: 14.06px;
-  letter-spacing: 1px;
-  color: #333333;
+  color: #333;
   text-transform: uppercase;
+}
+
+.hero-section {
+  padding: 116px 0 249px;
+  background-image: url("../images/bg-orange.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__img {
+  position: absolute;
+  right: 0;
+  top: -78px;
+}
+
+.hero__content-wrapper {
+  width: 464px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #000;
+}
+
+.hero__text {
+  margin-bottom: 34px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero__btn {
+  width: 193px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #0A775F;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.hero__btn:hover {
+  background-color: transparent;
+  color: #0A775F;
+  border-color: #0A775F;
 }/*# sourceMappingURL=main.css.map */
