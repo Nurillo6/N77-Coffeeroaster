@@ -1,34 +1,49 @@
 .hero-section {
-    padding: 116px 0 249px;
-    background-image:url("../images/bg-orange.png");
+    padding: 116px 0 150px;
+    background-image: url("../images/bg-orange.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     position: relative;
 }
 
-.hero__img{
+.hero__img-wrapper {
     position: absolute;
     right: 0;
-    top: -78px;
+    bottom: 0;
+
+    &::before {
+        content: "";
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        left: -60px;
+        top: -60px;
+        background-image: url("../images/hero-circle.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transform: rotate(-30deg);
+    }
 }
+
 .hero__content-wrapper {
     width: 464px;
 }
 
 .hero__title {
-    @include textStyle($MB:24px,$FS:64px, $FW:700, $LH:75px,$Color:#000);
+    @include textStyle($MB: 24px, $FS: 64px, $FW: 700, $LH: 75px, $Color: #000);
 }
 
 .hero__text {
-    @include textStyle($MB:34px,$FS:16px, $FW:400, $LH:24px,$Color:#000);
+    @include textStyle($MB: 34px, $FS: 16px, $FW: 400, $LH: 24px, $Color: #000);
     // & == .hero__text
 }
 
 .hero__btn {
-    @include ButtonStyle($W:193px,$BG:#0A775F, $Color:white, $PY:16px);
+    @include ButtonStyle($W: 193px, $BG: #0A775F, $Color: white, $PY: 16px);
+
     // & == .hero__btn
-    &:hover{
+    &:hover {
         background-color: transparent;
         color: #0A775F;
         border-color: #0A775F;
